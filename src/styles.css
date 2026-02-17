@@ -1,0 +1,9 @@
+/* Fondo oscuro para toda la aplicación */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%);
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}

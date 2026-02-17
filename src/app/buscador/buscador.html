@@ -1,0 +1,18 @@
+<div class="main-container">
+  <header>
+    <h1 class="title">COSMOS<span>EXPLORER</span></h1>
+    <p class="subtitle">Sincronizando con los archivos de la NASA...</p>
+  </header>
+
+  <div class="search-box">
+    <input 
+      #inputBusqueda
+      placeholder="Buscar nebulosas, planetas, misiones..."
+      (keyup.enter)="hacerBusqueda(inputBusqueda.value)"
+    >
+    <button (click)="hacerBusqueda(inputBusqueda.value)">EXPLORAR</button>
+  </div>
+
+<!--este codigo recibe lo del ts-->
+  <div id="galeria-estatica" class="gallery-grid" [innerHTML]="contenidoGaleria"></div>
+</div>
