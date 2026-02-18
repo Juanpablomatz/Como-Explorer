@@ -1,0 +1,23 @@
+<div class="main-container">
+  <!-- Título futurista sin emojis -->
+  <h1 class="title">MISIÓN<span>MARTE</span></h1>
+  <p class="subtitle">Explorando la superficie con los Rovers de la NASA</p>
+  
+  <div class="search-box">
+    <!-- Selector de Rover conectado al TS -->
+    <select [(ngModel)]="roverSeleccionado">
+      <option value="curiosity">Curiosity</option>
+      <option value="opportunity">Opportunity</option>
+      <option value="spirit">Spirit</option>
+    </select>
+
+    <!-- Selector de Fecha conectado al TS -->
+    <input type="date" [(ngModel)]="fechaSeleccionada">
+
+    <!-- Botón que dispara la función -->
+    <button (click)="buscarFotosMarte()">VER MARTE</button>
+  </div>
+
+  <!-- Aquí es donde aterrizan las fotos que genera el TS -->
+  <div class="gallery-grid" [innerHTML]="galeriaMarteHtml"></div>
+</div>

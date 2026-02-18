@@ -1,0 +1,18 @@
+::ng-deep .apod-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #00d2ff;
+}
+::ng-deep .apod-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+::ng-deep .apod-info p {
+  line-height: 1.6;
+  text-align: justify;
+  color: #ccc;
+}
